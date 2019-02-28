@@ -40,11 +40,11 @@ class Student extends Person {
       console.log(list);
     });
   }
-  PRAssignment(studentname, subject) {
-    return `${studentname} has submitted a PR for ${subject}.`;
+  PRAssignment(subject) {
+    return `${this.name} has submitted a PR for ${subject}.`;
   }
-  sprintChallenge(studentname, subject) {
-    return `${studentname} has begun sprint challenge on ${subject}.`;
+  sprintChallenge(subject) {
+    return `${this.name} has begun sprint challenge on ${subject}.`;
   }
 }
 //grandchild
@@ -145,9 +145,11 @@ console.log(PM2.standUp("Slack Web18"));
 // Students commands
 // speak()
 // listSubjects()
-// PRAssignment(studentname, subject)
-// sprintChallenge(studentname, subject)
+// PRAssignment(subject)
+// sprintChallenge(subject)
 console.log(Student1.speak());
 Student1.listSubjects();
 console.log(Student2.speak());
 Student2.listSubjects();
+console.log(Student1.PRAssignment("Javascript-IV"))
+console.log(Student2.PRAssignment("Javascript-II"))
